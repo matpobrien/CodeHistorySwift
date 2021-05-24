@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		DA18E4942657EAE200F5A0F8 /* Code_HistoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18E4932657EAE200F5A0F8 /* Code_HistoryApp.swift */; };
-		DA18E4962657EAE200F5A0F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18E4952657EAE200F5A0F8 /* ContentView.swift */; };
+		DA18E4962657EAE200F5A0F8 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18E4952657EAE200F5A0F8 /* GameView.swift */; };
 		DA18E4982657EAE400F5A0F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA18E4972657EAE400F5A0F8 /* Assets.xcassets */; };
 		DA18E49B2657EAE400F5A0F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA18E49A2657EAE400F5A0F8 /* Preview Assets.xcassets */; };
 		DAC03309265AEC42000A02BA /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC03308265AEC42000A02BA /* Question.swift */; };
 		DAC0330B265AEF02000A02BA /* ChoiceTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC0330A265AEF02000A02BA /* ChoiceTextView.swift */; };
 		DAC0330D265BC260000A02BA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC0330C265BC260000A02BA /* Game.swift */; };
+		DAC03332265BDE5E000A02BA /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC03331265BDE5E000A02BA /* WelcomeView.swift */; };
+		DAC03334265BE199000A02BA /* GameColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC03333265BE199000A02BA /* GameColor.swift */; };
+		DAC03336265BE340000A02BA /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC03335265BE340000A02BA /* BottomTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA18E4902657EAE200F5A0F8 /* Code History.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Code History.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA18E4932657EAE200F5A0F8 /* Code_HistoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code_HistoryApp.swift; sourceTree = "<group>"; };
-		DA18E4952657EAE200F5A0F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA18E4952657EAE200F5A0F8 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		DA18E4972657EAE400F5A0F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA18E49A2657EAE400F5A0F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA18E49C2657EAE400F5A0F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAC03308265AEC42000A02BA /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		DAC0330A265AEF02000A02BA /* ChoiceTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTextView.swift; sourceTree = "<group>"; };
 		DAC0330C265BC260000A02BA /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		DAC03331265BDE5E000A02BA /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		DAC03333265BE199000A02BA /* GameColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameColor.swift; sourceTree = "<group>"; };
+		DAC03335265BE340000A02BA /* BottomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +64,13 @@
 		DA18E4922657EAE200F5A0F8 /* Code History */ = {
 			isa = PBXGroup;
 			children = (
-				DAC0330A265AEF02000A02BA /* ChoiceTextView.swift */,
-				DA18E4932657EAE200F5A0F8 /* Code_HistoryApp.swift */,
-				DA18E4952657EAE200F5A0F8 /* ContentView.swift */,
-				DAC03308265AEC42000A02BA /* Question.swift */,
+				DAC0330F265BC565000A02BA /* Views */,
+				DAC0330E265BC554000A02BA /* Models */,
 				DA18E4972657EAE400F5A0F8 /* Assets.xcassets */,
+				DA18E4932657EAE200F5A0F8 /* Code_HistoryApp.swift */,
 				DA18E49C2657EAE400F5A0F8 /* Info.plist */,
 				DA18E4992657EAE400F5A0F8 /* Preview Content */,
-				DAC0330C265BC260000A02BA /* Game.swift */,
+				DAC03333265BE199000A02BA /* GameColor.swift */,
 			);
 			path = "Code History";
 			sourceTree = "<group>";
@@ -76,6 +81,26 @@
 				DA18E49A2657EAE400F5A0F8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DAC0330E265BC554000A02BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAC0330C265BC260000A02BA /* Game.swift */,
+				DAC03308265AEC42000A02BA /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DAC0330F265BC565000A02BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA18E4952657EAE200F5A0F8 /* GameView.swift */,
+				DAC0330A265AEF02000A02BA /* ChoiceTextView.swift */,
+				DAC03331265BDE5E000A02BA /* WelcomeView.swift */,
+				DAC03335265BE340000A02BA /* BottomTextView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +173,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAC03309265AEC42000A02BA /* Question.swift in Sources */,
+				DAC03332265BDE5E000A02BA /* WelcomeView.swift in Sources */,
 				DAC0330D265BC260000A02BA /* Game.swift in Sources */,
-				DA18E4962657EAE200F5A0F8 /* ContentView.swift in Sources */,
+				DA18E4962657EAE200F5A0F8 /* GameView.swift in Sources */,
+				DAC03336265BE340000A02BA /* BottomTextView.swift in Sources */,
+				DAC03334265BE199000A02BA /* GameColor.swift in Sources */,
 				DAC0330B265AEF02000A02BA /* ChoiceTextView.swift in Sources */,
 				DA18E4942657EAE200F5A0F8 /* Code_HistoryApp.swift in Sources */,
 			);

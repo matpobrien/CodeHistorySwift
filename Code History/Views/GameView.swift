@@ -8,11 +8,9 @@
 import SwiftUI
 
 
-struct ContentView: View {
+struct GameView: View {
     
     let question = Question(
-        questionNumber: 1,
-        totalQuestions: 10,
         questionText: "What was the first computer bug?",
         possibleAnswers: ["Ant", "Beetle", "Moth", "Fly"],
         correctAnswerIndex: 2)
@@ -23,7 +21,7 @@ struct ContentView: View {
         ZStack {
             mainColor.ignoresSafeArea()
             VStack {
-                Text("\(question.questionNumber) / \(question.totalQuestions)")
+                Text("1 / 10")
                     .font(.callout)
                     .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                     .padding()
@@ -37,7 +35,7 @@ struct ContentView: View {
                         Button(
                             action: {
                                 print("Tapped on \(question.possibleAnswers[answerIndex])")
-                                mainColor = answerIndex == question.correctAnswerIndex ? .green : .red
+                                mainColor = answerIndex == question.correctAnswerIndex ? GameColor.correctGuess : GameColor.incorrectGuess
                             },
                             label: {
                                 ChoiceTextView(choiceText: question.possibleAnswers[answerIndex])
@@ -54,7 +52,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GameView()
     }
 }
 
